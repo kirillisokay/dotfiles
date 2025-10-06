@@ -1,0 +1,11 @@
+[settings]
+idiomatic_version_file_enable_tools = ["ruby"]
+
+[settings.ruby]
+
+[tools]
+elixir = "latest"
+erlang = "latest"
+node = "lts"
+php = "latest"
+ruby = "latest"
