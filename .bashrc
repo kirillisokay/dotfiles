@@ -19,6 +19,8 @@ source ~/.local/share/omarchy/default/bash/rc
 #
 eval "$(starship init bash)"
 
+export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
+
 # opencode
 export PATH=/home/shine/.opencode/bin:$PATH
 
