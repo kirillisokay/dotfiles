@@ -18,7 +18,8 @@
   "hyprland/language": {
   "format": "{}",
   "format-en": "US",
-  "format-ru": "RU"
+  "format-ru": "RU",
+  "format-ua": "UA"
 },
   "hyprland/workspaces": {
     "on-click": "activate",
