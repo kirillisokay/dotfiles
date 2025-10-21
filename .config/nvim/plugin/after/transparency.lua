@@ -27,7 +27,8 @@ vim.api.nvim_set_hl(0, "NvimTreeNormal", { bg = "none" })
 vim.api.nvim_set_hl(0, "NvimTreeVertSplit", { bg = "none" })
 vim.api.nvim_set_hl(0, "NvimTreeEndOfBuffer", { bg = "none" })
 
--- transparent notify background
+-- notify background with proper color for transparency
+vim.api.nvim_set_hl(0, "NotifyBackground", { bg = "#ffffff" })
 vim.api.nvim_set_hl(0, "NotifyINFOBody", { bg = "none" })
 vim.api.nvim_set_hl(0, "NotifyERRORBody", { bg = "none" })
 vim.api.nvim_set_hl(0, "NotifyWARNBody", { bg = "none" })

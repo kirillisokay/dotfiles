@@ -2,11 +2,9 @@ return {
   "weizheheng/ror.nvim",
   dependencies = {
     "nvim-telescope/telescope.nvim",
-    "rcarriga/nvim-notify",
     "stevearc/dressing.nvim",
   },
   config = function()
-    vim.notify = require("notify")
 
     require("dressing").setup({
       input = {
