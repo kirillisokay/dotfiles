@@ -25,3 +25,5 @@ export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
 export PATH=/home/shine/.opencode/bin:$PATH
 
 . "$HOME/.local/share/../bin/env"
+
+export PATH=$PATH:/home/shine/.spicetify
