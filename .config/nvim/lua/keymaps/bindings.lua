@@ -1,4 +1,3 @@
--- lua/keymaps/bindings.lua
 local map = vim.keymap.set
 
 map({ "n", "x" }, "<C-a>", function()
@@ -32,3 +31,19 @@ end, { desc = "RoR List Routes" })
 map("n", "<Leader>ry", function()
   require("ror.schema").sync_routes()
 end, { desc = "RoR Sync Routes" })
+
+map({ "n", "x" }, "<leader>oa", function()
+  require("opencode").ask("@this: ", { submit = true })
+end, { desc = "Ask opencode" })
+
+map({ "n", "x" }, "<leader>ox", function()
+  require("opencode").select()
+end, { desc = "opencode actions" })
+
+map({ "n", "x" }, "<leader>og", function()
+  require("opencode").prompt("@this")
+end, { desc = "Add to opencode" })
+
+map({ "n", "t" }, "<leader>ot", function()
+  require("opencode").toggle()
+end, { desc = "Toggle terminal" })
