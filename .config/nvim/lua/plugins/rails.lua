@@ -5,7 +5,6 @@ return {
     "stevearc/dressing.nvim",
   },
   config = function()
-
     require("dressing").setup({
       input = {
         min_width = { 60, 0.9 },
@@ -37,43 +36,5 @@ return {
         fail_icon = "❌",
       },
     })
-
-    local wk = require("which-key")
-
-    wk.add({
-      { "<Leader>r", group = "RoR" },
-      {
-        "<Leader>rg",
-        function()
-          require("ror.commands").list_commands()
-        end,
-        desc = "RoR Commands",
-        mode = "n",
-      },
-      {
-        "<Leader>rq",
-        function()
-          require("ror.schema").list_table_columns()
-        end,
-        desc = "RoR Table Schema",
-        mode = "n",
-      },
-      {
-        "<Leader>rr",
-        function()
-          require("ror.schema").list_routes()
-        end,
-        desc = "RoR List Routes",
-        mode = "n",
-      },
-      {
-        "<Leader>ry",
-        function()
-          require("ror.schema").sync_routes()
-        end,
-        desc = "RoR Sync Routes",
-        mode = "n",
-      },
-    }, { silent = true })
   end,
 }

@@ -9,6 +9,13 @@ return {
       ruby = { "rubocop" },
       eruby = { "erb_format" },
       php = { "php_cs_fixer" },
+      javascript = { "prettier" },
+      javascriptreact = { "prettier" },
+      typescript = { "prettier" },
+      typescriptreact = { "prettier" },
+      json = { "prettier" },
+      html = { "prettier" },
+      css = { "prettier" },
     },
     formatters = {
       erb_format = {
