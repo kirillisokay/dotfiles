@@ -7,7 +7,7 @@
   "modules-left": [ "custom/arch", "hyprland/workspaces" , "cpu","custom/seperator","memory","custom/seperator","network#speed"],
   "modules-center": ["clock"],
   "modules-right": [
-    "idle_inhibitor",
+    "group/tray-expander",
     "custom/seperator",
     "temperature",
     "custom/seperator",
@@ -21,14 +21,6 @@
   ],
   "custom/seperator" : {
     "format" : "<span>|</span>"
-  },
-
-  "idle_inhibitor": {
-    "format": "{icon}",
-    "format-icons": {
-      "activated": "" ,
-      "deactivated": " "    
-    }
   },
   "temperature": {
     "thermal-zone": 0,
@@ -188,11 +180,11 @@
     "modules": ["custom/expand-icon", "tray"]
   },
   "custom/expand-icon": {
-    "format": " ",
+    "format": "",
     "tooltip": false
   },
   "tray": {
     "icon-size": 12,
-    "spacing": 12
+    "spacing": 17
   }
 }
