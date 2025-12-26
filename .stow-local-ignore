@@ -21,3 +21,7 @@ _darcs
 ^/README.*
 ^/LICENSE.*
 ^/COPYING
+
+
+# Ignore omarchy backup files
+\.bak\.[0-9]+$

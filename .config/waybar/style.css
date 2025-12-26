@@ -1,46 +1,20 @@
-@import "../omarchy/current/theme/waybar.css";
+@import "mocha.css";
 
 * {
-  background-color: @background;
-  color: @foreground;
+  background-color: @crust;
+  color: @text;
   border: none;
   border-radius: 0;
   min-height: 0;
-  font-family: 'CaskaydiaMono Nerd Font';
+  font-family: "JetBrainsMono Nerd Font";
   font-size: 12px;
+  font-weight: 700;
 }
 
 .modules-left {
-  margin-left: 8px;
 }
 
 .modules-right {
-  margin-right: 8px;
-}
-
-#workspaces button {
-  all: initial;
-  padding: 0 6px;
-  margin: 0 1.5px;
-  min-width: 9px;
-}
-
-#workspaces button.empty {
-  opacity: 0.5;
-}
-
-#cpu,
-#battery,
-#pulseaudio,
-#custom-omarchy,
-#custom-screenrecording-indicator,
-#custom-update {
-  min-width: 12px;
-  margin: 0 7.5px;
-}
-
-#tray {
-  margin-right: 16px;
 }
 
 #language {
@@ -48,40 +22,184 @@
   margin: 0 7.5px;
 }
 
-#bluetooth {
-  margin-right: 17px;
+#workspaces {
+  border-radius: 0px;
+  background: @base;
+  margin-right: 10px;
 }
 
-#network {
-  margin-right: 13px;
+#workspaces button {
+  background: @base;
+  all: initial;
+  padding: 0 8px;
+  margin: 0 2px;
 }
 
-#custom-expand-icon {
-  margin-right: 18px;
+#workspaces button label {
+  background: @base;
+  color: @surface2;
+  /* font-size: 10; */
 }
 
-tooltip {
-  padding: 2px;
+#workspaces button.active label {
+  background: @base;
+  color: #000000;
+  font-size: 15;
+  font-weight: 900;
 }
 
-#custom-update {
-  font-size: 10px;
+#workspaces button.empty {
+  background: @base;
+  opacity: 0.2;
+}
+
+#tray {
+  min-width: 0px;
+  transition:
+    min-width 0.2s ease,
+    opacity 0.2s ease;
+  opacity: 0;
+}
+
+#tray:hover {
+  min-width: 150px;
+  opacity: 1;
+}
+
+#tray,
+#cpu,
+#network,
+#pulseaudio {
+  min-width: 12px;
+  margin: 0 7.5px;
 }
 
 #clock {
-  margin-left: 8.75px;
+  color: @text;
+  /* background : @maroon; */
+  padding: 0 10px;
+}
+
+#custom-arch {
+  min-width: 20px;
+  margin: 0px 10px 0px 6px;
+  font-size: 18px;
+  color: @blue;
+}
+
+#custom-expand-icon {
+  margin-right: 7px;
+}
+
+tooltip {
+  font-family: Ubuntu Mono Nerd Font;
+  padding: 2px;
 }
 
 .hidden {
   opacity: 0;
 }
 
-#custom-screenrecording-indicator {
-  min-width: 12px;
-  margin-left: 8.75px;
-  font-size: 10px;
+#custom-seperator {
+  color: @surface2;
 }
 
-#custom-screenrecording-indicator.active {
-  color: #a55555;
+#cpu {
+  color: @text;
+  margin-right: 10px;
+}
+
+#idle_inhibitor {
+  font-size: 15px;
+  margin-right: 8;
+  margin-left: 8;
+  color: @green;
+}
+
+#custom-wallpaper {
+  /* font-size : 15px; */
+  margin-right: 8px;
+  margin-left: 8px;
+  color: @green;
+}
+
+#custom-gh {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 8px;
+}
+
+#memory {
+  color: @text;
+  margin-right: 10px;
+}
+
+#temperature {
+  color: @text;
+  margin-left: 6px;
+}
+
+#backlight {
+  color: @lavender;
+  margin-right: 10px;
+}
+
+#wireplumber {
+  color: @lavender;
+}
+
+#network {
+  color: @lavender;
+  margin-right: 10px;
+}
+
+#network.speed {
+  color: @text;
+}
+
+#battery {
+  padding: 0 8px;
+  margin-left: 2px;
+}
+
+#battery.charging {
+  color: @mantle;
+  background: #a6e3a1;
+}
+
+#battery.good:not(.charging) {
+  background: #74c7ec;
+  color: @mantle;
+}
+
+#battery.warning:not(.charging) {
+  background: #74c7ec;
+  color: @mantle;
+}
+
+#battery.low:not(.charging) {
+  background: #f38ba8;
+  /* Text */
+  color: @mantle;
+}
+
+#battery.critical:not(.charging) {
+  background: #f38ba8;
+  /* Text */
+  color: @mantle;
+  animation-name: blink;
+  animation-duration: 0.75s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-radius: 6px;
+}
+
+@keyframes blink {
+  to {
+    color: #f38ba8;
+    /* Red */
+    background: #f2cdcd;
+    /* Text */
+  }
 }
