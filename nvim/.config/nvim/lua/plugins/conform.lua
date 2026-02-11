@@ -8,8 +8,8 @@ return {
       lua = { "stylua" },
       ruby = { "rubocop" },
       eruby = { "erb_format" },
-      php = { "php_cs_fixer" },
-      javascript = { "eslint_d", "prettigr" },
+      php = { "php" },
+      javascript = { "eslint_d", "prettier" },
       javascriptreact = { "eslint_d", "prettier" },
       typescript = { "eslint_d", "prettier" },
       typescriptreact = { "eslint_d", "prettier" },
@@ -20,6 +20,15 @@ return {
     formatters = {
       erb_format = {
         command = "erb-format",
+      },
+      php = {
+        command = "php-cs-fixer",
+        args = {
+          "fix",
+          "--rules=@PSR12",
+          "$FILENAME",
+        },
+        stdin = false,
       },
     },
   },

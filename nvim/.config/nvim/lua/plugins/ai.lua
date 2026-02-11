@@ -18,7 +18,7 @@ return {
         enabled = "snacks",
         snacks = {
           direction = "right",
-          percent = 25,
+          percent = 20,
         },
       },
     }

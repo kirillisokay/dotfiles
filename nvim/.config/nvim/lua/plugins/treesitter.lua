@@ -19,6 +19,7 @@ return {
         "php",
         "jsdoc",
         "embedded_template",
+        "blade",
       },
 
       -- matchup = {
@@ -34,8 +35,8 @@ return {
       playground = {
         enable = true,
         disable = {},
-        updatetime = 25, -- Debounced time for highlighting nodes in the playground from source code
-        persist_queries = true, -- Whether the query persists across vim sessions
+        updatetime = 25,
+        persist_queries = true,
         keybindings = {
           toggle_query_editor = "o",
           toggle_hl_groups = "i",
@@ -57,6 +58,9 @@ return {
       vim.filetype.add({
         extension = {
           mdx = "mdx",
+        },
+        pattern = {
+          [".*%.blade%.php"] = "blade",
         },
       })
       vim.treesitter.language.register("markdown", "mdx")
