@@ -16,6 +16,7 @@ return {
       json = { "prettier" },
       html = { "prettier" },
       css = { "prettier" },
+      vue = { "prettier" },
     },
     formatters = {
       erb_format = {

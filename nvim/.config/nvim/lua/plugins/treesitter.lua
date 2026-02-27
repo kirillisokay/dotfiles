@@ -56,11 +56,11 @@ return {
       TS.setup(opts)
 
       vim.filetype.add({
-        extension = {
-          mdx = "mdx",
-        },
         pattern = {
           [".*%.blade%.php"] = "blade",
+        },
+        extension = {
+          mdx = "mdx",
         },
       })
       vim.treesitter.language.register("markdown", "mdx")
