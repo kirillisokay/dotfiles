@@ -1,26 +1,22 @@
 return {
-  "NickvanDyke/opencode.nvim",
+  "nickjvandyke/opencode.nvim",
+  version = "*", -- Latest stable release
   dependencies = {
-    ---@module 'snacks'
     {
+      -- `snacks.nvim` integration is recommended, but optional
+      ---@module "snacks" <- Loads `snacks.nvim` types for configuration intellisense
       "folke/snacks.nvim",
+      optional = true,
       opts = {
-        input = { enabled = true },
-        picker = { enabled = true },
-        terminal = {},
+        input = {}, -- Enhances `ask()`
+        picker = { -- Enhances `select()`
+          actions = {
+            opencode_send = function(...)
+              return require("opencode").snacks_picker_send(...)
+            end,
+          },
+        },
       },
     },
   },
-  config = function()
-    ---@type opencode.Opts
-    vim.g.opencode_opts = {
-      provider = {
-        enabled = "snacks",
-        snacks = {
-          direction = "right",
-          percent = 20,
-        },
-      },
-    }
-  end,
 }
