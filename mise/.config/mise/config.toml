@@ -5,8 +5,8 @@ idiomatic_version_file_enable_tools = ["ruby"]
 compile = false
 
 [tools]
-elixir = "latest"
-erlang = "latest"
+"github:anomalyco/opencode" = "latest"
+go = "latest"
 node = "lts"
 php = "latest"
 ruby = "latest"
