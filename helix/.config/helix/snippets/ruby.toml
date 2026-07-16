@@ -1,0 +1,5 @@
+[[snippets]]
+prefix = "ld"
+scope = [ "ruby" ]
+body = 'Rails.logger.debug("$1")'
+description = "log at debug level"

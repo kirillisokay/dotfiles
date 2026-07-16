@@ -1,0 +1,82 @@
+[language-server.scls]
+command = "simple-completion-language-server"
+
+[language-server.scls.config]
+feature_words = false                
+max_completion_items = 100
+feature_snippets = true               
+snippets_first = true                 
+snippets_inline_by_word_tail = false 
+feature_unicode_input = false        
+feature_paths = false                
+feature_citations = false            
+
+
+[[language]]
+name = "javascript"
+language-servers = ["scls","typescript-language-server", "vscode-eslint-language-server"]
+auto-format = true
+formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
+
+[[language]]
+name = "typescript"
+language-servers = ["scls","typescript-language-server", "vscode-eslint-language-server"]
+auto-format = true
+formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
+
+[[language]]
+name = "tsx"
+language-servers = ["scls","typescript-language-server", "vscode-eslint-language-server"]
+auto-format = true
+formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
+
+[[language]]
+name = "jsx"
+language-servers = ["scls","typescript-language-server", "vscode-eslint-language-server"]
+auto-format = true
+formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
+
+[[language]]
+name = "json"
+auto-format = false
+formatter = { command = 'npx', args = ["prettier", "--parser", "json"] }
+
+[language-server.ruby-lsp]
+command = "ruby-lsp"
+config = { diagnostics = true, formatting = true }
+
+[[language]]
+name = "ruby"
+language-servers = ["scls","ruby-lsp"]
+auto-format = true
+formatter = {command =  "rubocop", args = ["-a"]}
+
+[language-server.tailwindcss-ls]
+command = "tailwindcss-language-server"
+args = ["--stdio"]
+
+[[language]]
+formatter = { command = "htmlbeautifier", args = ["-T", "--keep-blank-lines=1"]}
+language-servers = ["scls","vscode-html-language-server", "tailwindcss-ls", "ruby-lsp"]
+name = "erb"
+
+[[language]]
+formatter = { command = "prettier", args = ["--parser", "css"] }
+language-servers = ["scls","vscode-css-language-server", "tailwindcss-ls"]
+name = "css"
+
+[[language]]
+name = "go"
+auto-format = true
+formatter = { command = "goimports"}
+indent = { tab-width = 2, unit = "\t"}
+language-servers = ["scls", "gopls"]
+
+[language-server.phpactor]
+command = "phpactor"
+args = [ "language-server" ]
+
+[[language]]
+name = "php"
+language-servers = [ "phpactor", "vscode-html-language-server" ]
+# auto-format = true

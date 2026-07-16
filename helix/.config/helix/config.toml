@@ -1,0 +1,15 @@
+theme = "onedark"
+
+[editor]
+mouse = false
+bufferline = "multiple"
+
+[editor.lsp]
+display-inlay-hints = true
+display-messages = true
+
+[editor.inline-diagnostics]
+cursor-line = "error"
+
+[keys.normal]
+"C-g" = [":write-all", ":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
