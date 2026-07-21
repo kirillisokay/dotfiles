@@ -106,4 +106,4 @@ TODO="t"
 # BASH_IT_RELOAD_LEGACY=1
 
 # Load Bash It
-source "${BASH_IT?}/bash_it.sh"
+# source "${BASH_IT?}/bash_it.sh"

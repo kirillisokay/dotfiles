@@ -1,4 +1,4 @@
-theme = "onedark"
+theme = "gruvbox_dark_soft"
 
 [editor]
 mouse = false
@@ -13,3 +13,32 @@ cursor-line = "error"
 
 [keys.normal]
 "C-g" = [":write-all", ":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
+
+[editor.statusline]
+right = [
+    # "file-encoding",
+    "file-type",
+    # "file-line-ending",
+    "separator",
+    "file-name",
+    # "read-only-indicator",
+    "separator",
+    "spacer",
+    "version-control",
+    "spacer",
+    "separator",
+    "file-modification-indicator",
+]
+left = [
+    "mode",
+    "selections",
+    "primary-selection-length",
+    "separator",
+    "position",
+    "position-percentage",
+]
+
+[editor.statusline.mode]
+insert = "INSERT"
+normal = "NORMAL"
+select = "SELECT"
