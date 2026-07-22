@@ -41,12 +41,12 @@ case $- in
 esac
 
 # Path to the bash it configuration
-BASH_IT="/home/shine/.config/bash_it"
+# BASH_IT="/home/shine/.config/bash_it"
 
 # Lock and Load a custom theme file.
 # Leave empty to disable theming.
 # location "$BASH_IT"/themes/
-export BASH_IT_THEME=''
+# export BASH_IT_THEME=''
 
 # Some themes can show whether `sudo` has a current token or not.
 # Set `$THEME_CHECK_SUDO` to `true` to check every prompt:
@@ -64,13 +64,13 @@ export BASH_IT_THEME=''
 #GIT_HOSTING='git@git.domain.com'
 
 # Don't check mail when opening terminal.
-unset MAILCHECK
+# unset MAILCHECK
 
 # Change this to your console based IRC client of choice.
-export IRC_CLIENT='irssi'
+# export IRC_CLIENT='irssi'
 
 # Set this to the command you use for todo.txt-cli
-TODO="t"
+# TODO="t"
 
 # Set this to the location of your work or project folders
 #BASH_IT_PROJECT_PATHS="${HOME}/Projects:/Volumes/work/src"
@@ -107,3 +107,4 @@ TODO="t"
 
 # Load Bash It
 # source "${BASH_IT?}/bash_it.sh"
+export EZA_CONFIG_DIR="$HOME/.config/eza"

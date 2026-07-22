@@ -1,4 +1,5 @@
 {
-  "name": "Lumon",
-  "extension": "oldjobobo.lumon-theme"
+  "name": "Omarchy Bauhaus",
+  "note": "This is a placeholder. If you use a VS Code theme manager in Omarchy, point it to a published Bauhaus theme when available.",
+  "type": "dark"
 }

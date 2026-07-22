@@ -36,6 +36,7 @@ mouse-scroll-multiplier = 0.95
 # Fix general slowness on hyprland (https://github.com/ghostty-org/ghostty/discussions/3224)
 async-backend = epoll
 
-# gtk-single-instance = true
-# quit-after-last-window-closed = true
-# quit-after-last-window-closed-delay = 5m
+
+background-opacity = 0.85
+# If your compositor supports it (e.g., Wayland/KDE/GNOME with extensions):
+background-blur = true
