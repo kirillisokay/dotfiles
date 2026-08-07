@@ -34,5 +34,7 @@ export SYSTEMD_EDITOR=cat
 alias hx="helix"
 # shellcheck disable=SC2034
 
+alias ghc="git branch --merged | grep -v '^\*' | xargs git branch -d"
+
 export EZA_CONFIG_DIR="$HOME/.config/eza"
 eval "$(zellij setup --generate-auto-start bash)"
