@@ -47,9 +47,8 @@ config = { diagnostics = true, formatting = true }
 
 [[language]]
 name = "ruby"
-language-servers = ["scls","ruby-lsp"]
 auto-format = true
-formatter = {command =  "rubocop", args = ["-a"]}
+formatter = { command = "rubocop", args = ["--autocorrect", "--stderr", "--stdin", "%"] }
 
 [language-server.tailwindcss-ls]
 command = "tailwindcss-language-server"
