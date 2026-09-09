@@ -21,10 +21,10 @@
           "id": "omarchy.weather"
         },
         {
-          "id": "omarchy.agents"
+          "id": "omarchy.system-update"
         },
         {
-          "id": "omarchy.system-update"
+          "id": "omarchy.agents"
         }
       ],
       "left": [
@@ -33,11 +33,25 @@
         },
         {
           "id": "omarchy.workspaces"
+        },
+        {
+          "id": "wizwam.ytmusic",
+          "idleShutdownMinutes": 15,
+          "showMiniPlayer": "On",
+          "shortcutPlayer": "Full player",
+          "audioQuality": "320 kbps",
+          "searchHistory": "[\"Motionless in white\",\"Motionless\"]",
+          "sessionState": "{\"tab\":\"detail\",\"searchText\":\"\",\"libraryType\":\"tracks\",\"libraryFilter\":\"\",\"detailFilter\":\"\",\"detailItem\":{\"album\":\"\",\"artists\":[{\"id\":\"UC_wpim8RQBA9grhV-JQzJzA\",\"kind\":\"context\",\"name\":\"K\",\"type\":\"artist\",\"uri\":\"ytm:artist:UC_wpim8RQBA9grhV-JQzJzA\"}],\"description\":\"K • 50 songs\",\"durationMs\":0,\"externalUrl\":\"https://music.youtube.com/playlist?list=RDTSCemHxiq0-2iSYq4igVfLRg\",\"id\":\"RDTSCemHxiq0-2iSYq4igVfLRg\",\"imageUrl\":\"https://www.gstatic.com/music/youtube_identity_and_hashtags/TASTE_MATCH_THUMBNAIL_ORANGE_WHITE_800x800_v2.png\",\"kind\":\"context\",\"liked\":false,\"name\":\"K and Korizza\",\"playlistId\":\"RDTSCemHxiq0-2iSYq4igVfLRg\",\"subtitle\":\"K · 50 songs\",\"type\":\"playlist\",\"uri\":\"ytm:playlist:RDTSCemHxiq0-2iSYq4igVfLRg\",\"videoId\":\"\",\"year\":\"\"}}",
+          "eqPreset": "Flat",
+          "eqBands": "[0,0,0,0,0,0,0,0,0,0]"
         }
       ],
       "right": [
         {
           "id": "omarchy.tray"
+        },
+        {
+          "id": "io.github.grichard99.omaproton-vpn"
         },
         {
           "id": "omarchy.bluetooth"

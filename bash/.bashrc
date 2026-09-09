@@ -46,3 +46,4 @@ alias hx="helix"
 alias ghc="git branch --merged | grep -v '^\*' | xargs git branch -d"
 
 export EZA_CONFIG_DIR="$HOME/.config/eza"
+. "$HOME/.cargo/env"

@@ -1,4 +1,4 @@
-theme = "gruvbox_dark_soft"
+theme = "rose_pine_moon"
 
 [editor]
 mouse = false
@@ -12,8 +12,12 @@ display-messages = true
 cursor-line = "error"
 
 [keys.normal]
-"C-g" = [":write-all", ":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
-
+C-g = [
+    ":write-all",
+    ":insert-output lazygit >/dev/tty",
+    ":redraw",
+    ":reload-all"
+]
 [editor.statusline]
 right = [
     # "file-encoding",

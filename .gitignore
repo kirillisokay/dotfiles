@@ -1,4 +1,6 @@
 .config/gh/hosts.yml
 .config/hypr/envs.conf
+/omarchy/.config/omarchy/plugins/
+/omarchy/.config/omarchy/themes/
 envs.conf
 hosts.yml

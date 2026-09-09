@@ -4,9 +4,13 @@ idiomatic_version_file_enable_tools = ["ruby"]
 [settings.ruby]
 compile = false
 
+[settings.upgrade]
+auto_prune = false
+
 [tools]
 codex = "latest"
 gemini = { version = "latest", allow_builds = ["@github/keytar", "node-pty"] }
+gh = "latest"
 "github:anomalyco/opencode" = "latest"
 go = "latest"
 node = "lts"
