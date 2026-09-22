@@ -73,3 +73,4 @@ o.bind("SUPER +  SHIFT + Y", "YouTube", 'omarchy-launch-webapp "https://youtube.
 o.bind("SUPER +  SHIFT + X", "X", 'omarchy-launch-webapp "https://x.com/"')
 o.bind("SUPER +  SHIFT + R", "Reddit", 'omarchy-launch-webapp "https://reddit.com"')
 o.bind("SUPER +  SHIFT + ALT + I", "WhatsApp", 'omarchy-launch-or-focus-webapp WhatsApp "https://web.whatsapp.com/"')
+o.bind("SUPER + SHIFT + M", "Music", "uwsm-app -- sonora")
