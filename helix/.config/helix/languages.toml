@@ -55,9 +55,10 @@ command = "tailwindcss-language-server"
 args = ["--stdio"]
 
 [[language]]
-formatter = { command = "htmlbeautifier", args = ["-T", "--keep-blank-lines=1"]}
-language-servers = ["scls","vscode-html-language-server", "tailwindcss-ls", "ruby-lsp"]
 name = "erb"
+auto-format = true
+formatter = { command = "erb-format", args = ["--stdin"] }
+
 
 [[language]]
 formatter = { command = "prettier", args = ["--parser", "css"] }
