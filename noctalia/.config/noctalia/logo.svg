@@ -1,0 +1,36 @@
+<svg
+  viewBox="10 15 80 70"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M50 20L30 40L50 60L70 40L50 20Z"
+    stroke="#E6B8AF"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M50 40L30 60L50 80L70 60L50 40Z"
+    stroke="#D4C2AD"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M35 35L15 55L35 75L55 55L35 35Z"
+    stroke="#E6B8AF"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.6"
+  />
+  <path
+    d="M65 35L45 55L65 75L85 55L65 35Z"
+    stroke="#D4C2AD"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.6"
+  />
+</svg>

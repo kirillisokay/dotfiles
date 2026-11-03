@@ -11,19 +11,31 @@ capsule_radius = 16
 
 
 start  = ["arch", "workspaces", "group:system"]
-center = ["clock", "weather"]
-end    = ["media", "tray", "battery", "network" ]
+center = ["clock", "weather", "ai_usage" ]
+end    = ["media", "tray", "battery", "network", "wallhaven"]
 
 # ───────── Left ─────────
 [widget.arch]
 type = "launcher"                                   # click opens the launcher
-custom_image = "~/.config/noctalia/arch.svg"        # any Arch logo image
+custom_image = "~/.config/noctalia/logo.svg"        # any Arch logo image
+
 
 [widget.workspaces]
-display = "id"                                      # none | id | name
+style = "regular"               # regular | minimal | focus_hint
+
+show_labels = true              # Show workspace labels
+label_source = "id"             # id | name
+
 focused_color = "primary"
 occupied_color = "secondary"
-empty_color = "surface_variant"
+empty_color = "surface_container"
+
+pill_scale = 1.0
+active_pill_size = 2.2
+inactive_pill_size = 1.0
+
+hide_when_empty = false
+show_tooltip = true
 
 [[bar.default.capsule_group]]
 id = "system"
@@ -36,6 +48,14 @@ enabled = true
 
 
 # ───────── Center ─────────
+
+[widget.ai_usage]
+type = "felipeartur/ai-usagebar:bar"
+visualization = "gauge"
+provider_limit = 2
+quota_window = "weekly"
+auto_providers = [ "openai", "claude" ] 
+
 [widget.clock]
 format = "{:%a %d %b  %H:%M}"
 
@@ -44,6 +64,8 @@ max_length = 180
 show_condition = true
 
 # ───────── Right ─────────
+[widget.wallhaven]
+type = "noctalia/wallhaven:wallhaven"
 
 [widget.media]
 min_length = 80

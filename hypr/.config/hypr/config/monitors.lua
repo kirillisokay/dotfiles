@@ -2,7 +2,7 @@
 -- Example: output can be found with hyprctl monitors. Edit variables.lua for the monitor outputs instead of here directly-
  hl.monitor({
      output    = "eDP-1",
-     mode      = "1920x1080@60",
+     mode      = "1920x1080@144",
      position  = "0x0",
      scale     = "1",
  })
