@@ -1,0 +1,74 @@
+# ───────── Bar layout ─────────
+[bar.default]
+position = "top"
+widget_spacing = 8
+
+capsule = true
+capsule_fill = "surface_container"
+capsule_opacity = 0.85
+capsule_padding = 8
+capsule_radius = 16
+
+
+start  = ["arch", "workspaces", "group:system"]
+center = ["clock", "weather"]
+end    = ["media", "tray", "battery", "network" ]
+
+# ───────── Left ─────────
+[widget.arch]
+type = "launcher"                                   # click opens the launcher
+custom_image = "~/.config/noctalia/arch.svg"        # any Arch logo image
+
+[widget.workspaces]
+display = "id"                                      # none | id | name
+focused_color = "primary"
+occupied_color = "secondary"
+empty_color = "surface_variant"
+
+[[bar.default.capsule_group]]
+id = "system"
+members = ["cpu", "ram"]
+fill = "surface_container"
+padding = 10
+opacity = 0.85
+widget_spacing = 12
+enabled = true
+
+
+# ───────── Center ─────────
+[widget.clock]
+format = "{:%a %d %b  %H:%M}"
+
+[widget.weather]
+max_length = 180
+show_condition = true
+
+# ───────── Right ─────────
+
+[widget.media]
+min_length = 80
+max_length = 240
+art_size = 20
+title_scroll = "on_hover"
+
+[widget.tray]
+drawer = true
+drawer_columns = 3
+drawer_item_size = 20
+detached_panel = false
+hide_passive = true
+pinned =  []
+
+[widget.battery]
+device = "auto"
+
+[widget.network]
+show_label = true                                   # show SSID
+# ───────── Weather / location ─────────
+[weather]
+enabled = true
+unit = "metric"
+refresh_minutes = 30
+
+[location]
+address = "Odesa, Ukraine"                          # or auto_locate = true
