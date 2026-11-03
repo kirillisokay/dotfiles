@@ -1,4 +1,4 @@
-theme = "rose_pine_moon"
+theme = "ayu_dark"
 
 [editor]
 mouse = false
@@ -18,14 +18,15 @@ C-g = [
     ":redraw",
     ":reload-all"
 ]
+"A-[" = "goto_previous_buffer"
+"A-]" = "goto_next_buffer"
+
+
 [editor.statusline]
 right = [
-    # "file-encoding",
     "file-type",
-    # "file-line-ending",
     "separator",
     "file-name",
-    # "read-only-indicator",
     "separator",
     "spacer",
     "version-control",
