@@ -1,23 +1,6 @@
-[settings]
-idiomatic_version_file_enable_tools = ["ruby"]
-
-[settings.ruby]
-compile = false
-
-[settings.upgrade]
-auto_prune = false
-
 [tools]
 claude = "latest"
-claude-code = "latest"
 codex = "latest"
-gemini = { version = "latest", allow_builds = ["@github/keytar", "node-pty"] }
-gh = "latest"
-"github:anomalyco/opencode" = "latest"
-go = "latest"
-"go:golang.org/x/tools/gopls" = "latest"
-node = "lts"
-opencode = "latest"
-php = "latest"
+kubectl = "latest"
+node = "latest"
 python = "latest"
-ruby = "latest"
