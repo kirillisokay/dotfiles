@@ -102,7 +102,7 @@ hl.bind(mainMod .. " + SHIFT + D", hl.dsp.exec_cmd(launchPrefix .. TERMINAL .. "
 hl.bind(mainMod .. " + SHIFT + G", hl.dsp.exec_cmd(launchPrefix .. "Telegram"))
 hl.bind(mainMod .. " + SHIFT + O", hl.dsp.exec_cmd(launchPrefix .. "obsidian"))
 hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd(launchPrefix .. "filezilla"))
-hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd(launchPrefix .. "thunderbird"))
+hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd(launchPrefix .. "geary"))
 hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd(launchPrefix .. "sonora"))
 
 
