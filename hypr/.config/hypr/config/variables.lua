@@ -1,6 +1,6 @@
 -- Hyprland default apps
 
-TERMINAL     = "ghostty"
+TERMINAL     = "foot"
 FILE_MANAGER = "nautilus"
 BROWSER      = "zen-browser"
 EDITOR       = "gnome-text-editor --new-window"

@@ -15,7 +15,7 @@ end
 ---- WINDOW MANAGEMENT ----
 ---------------------------
 
-hl.bind(mainMod .. " + Escape",      hl.dsp.exec_cmd("hyprctl kill"))
+-- hl.bind(mainMod .. " + Escape",      hl.dsp.exec_cmd("hyprctl kill"))
 hl.bind(mainMod .. " + Q",           hl.dsp.window.close())
 hl.bind(mainMod .. " + ALT + Space", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + D",           hl.dsp.window.fullscreen({ mode = 1 }))
@@ -91,6 +91,7 @@ hl.bind(mainMod .. " + Z",          hl.dsp.exec_cmd(noctCall .. "settings-toggle
 hl.bind(mainMod .. " + X",          hl.dsp.exec_cmd(noctCall .. "panel-toggle control-center"))
 hl.bind(mainMod .. " + Space",      hl.dsp.exec_cmd(noctCall .. "panel-toggle launcher"))
 hl.bind(mainMod .. " + period",     hl.dsp.exec_cmd(noctCall .. "panel-toggle launcher /emo"))
+hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd(noctCall .. "panel-toggle session"))
 
 ------------------------------------------
 ---- PERSONAL APPLICATION SHORTCUTS ----
